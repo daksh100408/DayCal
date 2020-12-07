@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function displayNum(n1){
+calcform.txt1.value = calcform.txt1.value+n1;
+
+}
+</script>
+<style>
+  html{
+      background-color: rgb(15, 247, 255);
+  }  
+ #container{
+      color: white;
+      margin-top:200px;
+      margin-left: 600px;
+ }
+#c {
+   width:170px; 
+}
+#btn {
+width:39px;
+}
+#box {
+    height:18px
+}
+#back {
+    background-color: red;
+    font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+   <form name="calcform" >
+       <input id="box" type="text" name="txt1" style="text-align: right;">
+       <br>
+       <input id="c" type="button" name="clearbtn" value="C" onclick="displayNum(txt1.value = 0)">
+       <br>
+       <input id="btn"type="button" name="btn7" value="7" onclick="displayNum(btn7.value)">
+       <input id="btn" type="button" name="btn8" value="8" onclick="displayNum(btn8.value)">
+       <input id="btn" type="button" name="btn9" value="9" onclick="displayNum(btn9.value)">
+       <input id="btn" type="button" name="addbutton" value="+" onclick="displayNum(addbutton.value)">
+       <br>
+       <input id="btn" type="button" name="btn4" value="4" onclick="displayNum(btn4.value)">
+       <input id="btn" type="button" name="btn5" value="5" onclick="displayNum(btn5.value)">
+       <input id="btn" type="button" name="btn6" value="6" onclick="displayNum(btn6.value)">
+       <input id="btn" type="button" name="subbutton" value="-" onclick="displayNum(subbutton.value)">
+       <br>
+       <input id="btn" type="button" name="btn1" value="1" onclick="displayNum(btn1.value)">
+       <input id="btn" type="button" name="btn2" value="2" onclick="displayNum(btn2.value)">
+       <input id="btn" type="button" name="btn3" value="3" onclick="displayNum(btn3.value)">
+       <input id="btn" type="button" name="mulbutton" value="*" onclick="displayNum(mulbutton.value)">
+       <br>
+       <input id="btn" type="button" name="dotbutton" value="." onclick="displayNum(dotbutton.value)">
+       <input id="btn" type="button" name="btn0" value="0" onclick="displayNum(btn0.value)">
+       <input id="btn" type="button" name="equalbtn" value="=" onclick="txt1.value = eval(txt1.value)">
+       <input id="btn" type="button" name="divbutton" value="/" onclick="displayNum(divbutton.value)">
+       <br>
+   </form>
+    </div>
+    <a id="back" href="http://127.0.0.1:5500/screen2.html">back</a>
+</body>
+
+</html>
